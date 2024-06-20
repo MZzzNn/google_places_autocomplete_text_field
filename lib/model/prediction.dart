@@ -1,7 +1,7 @@
+
 class PlacesAutocompleteResponse {
   List<Prediction>? predictions;
   String? status;
-
   PlacesAutocompleteResponse({this.predictions, this.status});
 
   PlacesAutocompleteResponse.fromJson(Map<String, dynamic> json) {

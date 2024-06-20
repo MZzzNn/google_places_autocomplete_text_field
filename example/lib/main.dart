@@ -1,5 +1,8 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:google_places_autocomplete_text_field/google_places_autocomplete_text_field.dart';
+import 'package:google_places_autocomplete_text_field/model/place_model.dart';
 import 'package:google_places_autocomplete_text_field/model/prediction.dart';
 
 void main() {
@@ -84,6 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 itmClick: (Prediction prediction) =>
                     _textController.text = prediction.description!,
+                placeDetail: (Place place) {
+                  log("place ${place.toJson()}");
+                },
               ),
             ),
             const SizedBox(height: 24),

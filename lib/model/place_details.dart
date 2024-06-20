@@ -1,12 +1,16 @@
+import 'package:google_places_autocomplete_text_field/model/place_model.dart';
+
 class PlaceDetails {
   Result? result;
   String? status;
+  Place? place;
 
-  PlaceDetails({this.result, this.status});
+  PlaceDetails({this.result, this.status, this.place});
 
   PlaceDetails.fromJson(Map<String, dynamic> json) {
     result = json['result'] != null ? Result.fromJson(json['result']) : null;
     status = json['status'];
+    place = json['result'] != null ? Place.fromJson(json['result']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -16,6 +20,7 @@ class PlaceDetails {
       data['result'] = result!.toJson();
     }
     data['status'] = status;
+    data['result'] = place!.toJson();
     return data;
   }
 }
