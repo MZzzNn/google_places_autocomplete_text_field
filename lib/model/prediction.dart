@@ -1,3 +1,4 @@
+part of "../google_places_autocomplete_text_field.dart";
 
 class PlacesAutocompleteResponse {
   List<Prediction>? predictions;

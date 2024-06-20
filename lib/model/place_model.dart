@@ -1,3 +1,5 @@
+part of "../google_places_autocomplete_text_field.dart";
+
 class _Geo {
   final double lat;
   final double lng;

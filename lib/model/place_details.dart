@@ -1,5 +1,4 @@
-import 'package:google_places_autocomplete_text_field/model/place_model.dart';
-
+part of "../google_places_autocomplete_text_field.dart";
 class PlaceDetails {
   Result? result;
   String? status;
