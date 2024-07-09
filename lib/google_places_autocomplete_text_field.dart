@@ -2,14 +2,12 @@ library google_places_autocomplete_text_field;
 
 import 'dart:developer';
 import 'dart:io';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:uuid/uuid.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 part 'model/prediction.dart';
 part 'model/place_model.dart';
